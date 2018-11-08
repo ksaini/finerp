@@ -1307,7 +1307,7 @@ function hide_signin(){
 
 function sign_in(id){
 	hide_signin();
-	window.location = "dashboard.html";
+	window.location = "index.html";
 	document.getElementById(id).hidden=false;
 	document.getElementsByClassName(id)[0].focus();
 }
