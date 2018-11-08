@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script  src="js/js.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body  background="login_image.jpg">
+		<div><center>
+			<div class="sale_head1">
+				<span class="sale_head2">
+					Login to continue
+				</span>
+			</div>  
+		</center></div><br>
+		<div class="centre">
+			<div>
+				<div id="login" class="signin" hidden=true>
+					<h2>LOGIN</h2>
+					<input class="login" type="text" id="username" tabindex="1" placeholder="Username" /><br><br>
+					<input class="login" type="password" id="password" tabindex="2" placeholder="Password" /><br><br>
+					<button onclick="login()" tabindex="3" > LOGIN </button>
+					<button onclick="reset_login()"tabindex="4" > Reset </button><br><br><br><br>
+				</div>
+				<div id="signup" class="signin" hidden=true>
+					<h2>SIGN UP</h2>
+					<input class="signup" type="text"     tabindex="1" placeholder="Username" onBlur="check_user_availability();" /><br><br>
+					<input class="signup" type="email"    tabindex="2" placeholder="Email" /><br><br>
+					<input class="signup" type="password" tabindex="3" placeholder="Password" /><br><br>
+					<input class="signup" type="password" tabindex="4" placeholder="Confirm Password" /><br><br>
+					<button onclick="sign_up();"tabindex="5" >SIGN UP</button>
+					<button onclick="reset_login()"tabindex="6" > Reset </button><br><br><br><br>
+				</div>
+			</div>	
+				<div>
+					<a href="#" class="right" tabindex="7" onclick='sign_in("login");'>Existing User !!</a><span class="right"></span>  
+					<a href="#" class="right" tabindex="8" onclick='sign_in("signup");'><i>New User !!</i></a>
+					<a href="#" class="right" tabindex="9" onclick='forget_password();'><i>forgot password</i></a><br>
+				</div> 
+		</div>
+	</body>
+</html>

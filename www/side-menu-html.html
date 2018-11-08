@@ -1,0 +1,247 @@
+<link rel='stylesheet' type='text/css' href='css/style.css' />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+		<script type="text/javascript" src="js/js.js"></script>
+<html>
+	<head>
+		
+	</head>
+	<body onload="show_fields()" >
+	<div class="nav-side-menu">
+    <div class="brand" style="border: 1px solid black"><img width="100%" src="data:image/jpeg;base64,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" /></div>
+    
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list" style="overflow-y: visible">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                    <a>
+                        <i class="fa fa-user fa-lg"></i>
+                        <span class="nav-text">
+                            Login User:<?php echo $username ?>
+                        </span>
+                    </a>
+                  
+                </li>
+				<li>
+                    <a>
+                        <i class="fa fa-align-center fa-lg"></i>
+                        <span class="nav-text">
+                            Financial Yr:
+							<select id="f_year" style="width: 100px;border: 0px;background-color: white"><?php echo financeYear($username);  ?></select>
+                        </span>
+                    </a>
+                  
+                </li>
+                <li>
+                    <a href="dashboard.php">
+                        <i class="fa fa-home fa-lg"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+				<li class="has-subnav">
+                    <a href="add_business_unit.php">
+                        <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">
+                            Add Business Unit
+                        </span>
+                    </a>
+                    
+                </li>
+				<li class="has-subnav">
+                    <a href="add_unit.php">
+                        <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">
+                            Unit Conversion Table
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="add_account.php">
+                        <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">
+                            Add Account
+                        </span>
+                    </a>
+                    
+                </li>
+				<li class="has-subnav">
+                    <a href="add_group.php">
+                       <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">
+                            Add Account-Group
+                        </span>
+                    </a>
+                   
+                </li>
+                
+                <li class="has-subnav">
+                    <a href="add_item.php">
+                       <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">
+                            Add Item
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="add_item_group.php">
+                       <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">
+                            Add Item-Group
+                        </span>
+                    </a>
+                   
+                </li>
+				<li class="has-subnav">
+                    <a href="electricity_bill.php">
+                       <i class="fa fa-bolt fa-lg"></i>
+                        <span class="nav-text">
+                            Electric Reading
+                        </span>
+                    </a>
+                </li>
+				<li class="has-subnav">
+                    <a href="production.php">
+                       <i class="fa fa-industry fa-lg"></i>
+                        <span class="nav-text">
+                            Production
+                        </span>
+                    </a>
+                </li>
+				<!--<li class="has-subnav">
+                    <a href="add_company.php">
+                       <i class="fa fa-plus fa-lg"></i>
+                        <span class="nav-text">
+                            Add Company
+                        </span>
+                    </a>
+                   
+                </li>-->
+				<li>
+                    <a href="statement.php">
+                        <i class="fa fa-font fa-lg"></i>
+                        <span class="nav-text">
+                           Account Statement
+                        </span>
+                    </a>
+                </li>
+				<li>
+                    <a href="item_statement.php">
+                        <i class="fa fa-gift fa-lg"></i>
+                        <span class="nav-text">
+                           Item Statement
+                        </span>
+                    </a>
+                </li>
+				<li>
+                    <a href="item_group_statement.php">
+                        <i class="fa fa-object-group fa-lg"></i>
+                        <span class="nav-text">
+                            ItemGroup Ledger
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="group_ledger.php">
+                        <i class="fa fa-group fa-lg"></i>
+                        <span class="nav-text">
+                            Group Ledger
+                        </span>
+                    </a>
+                </li>
+				<li>
+                    <a href="balance_sheet.php">
+                       <i class="fa fa-balance-scale"></i>
+                        <span class="nav-text">
+                            Balance Sheet
+                        </span>
+                    </a>
+                </li>
+				<li>
+                    <a href="profit_loss_account.php">
+                       <i class="fa fa-inr fa-lg"></i>
+                        <span class="nav-text">
+                            P / L Account
+                        </span>
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="account_ledger.php">
+                        <i class="fa fa-font fa-lg"></i>
+                        <span class="nav-text">
+                            Account Ledger
+                        </span>
+                    </a>
+                </li>-->
+                <li>
+                   <a href="Sales.php">
+                       <i class="fa fa-truck fa-lg"></i>
+                        <span class="nav-text">
+                            Sale
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="purchase.php">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                        <span class="nav-text">
+                            Purchase
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="debit_note.php">
+                       <i class="fa fa-archive fa-lg"></i>
+                        <span class="nav-text">
+                            Debit/Credit Note
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="journal.php">
+                       <i class="fa fa-briefcase fa-lg"></i>
+                        <span class="nav-text">
+                            Journal
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Payments.php">
+                       <i class="fa fa-credit-card fa-lg"></i>
+                        <span class="nav-text">
+                            Payment
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Receipts.php">
+                       <i class="fa fa-align-justify fa-lg"></i>
+                        <span class="nav-text">
+                            Receipt
+                        </span>
+                    </a>
+                </li>
+				<li class="logout">
+                   <a href="logout.php">
+                         <i class="fa fa-power-off fa-lg"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+            </ul>
+		</div>
+            
+                
+
+           
+     
+</div>
+	</body>
+</html>
+

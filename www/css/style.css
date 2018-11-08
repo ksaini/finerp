@@ -1,0 +1,192 @@
+.modal, .modal1 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 100%;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+    }
+    .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button:hover {
+        background-color: darkgray;
+    }
+.info
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+	width:25%; 
+	overflow: hidden;
+	background-color:#ffff;
+	color:#777;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+}
+.style1:active{
+	background-color: grey;
+}
+:checked + span {
+				font-weight: bold;
+				background-color: grey;
+			} 
+.style1{
+	border:1px solid #d4d4d4;
+	text-align:center;
+	padding:8px;
+	vertical-align:top;
+	width:10%;
+}
+.sale_head1{
+	height:50px;
+	background-color:Grey;
+	font-size: 26px;
+}
+.datatable{
+	font-size: 12px;
+}
+.sale_detail{
+	background-color:lightblue;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	border-spacing: 0;
+		
+}
+.sale_detail_2{
+	background-color:lightblue;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	border-spacing: 0;
+		
+}
+.sale_head2{
+	height:50px;
+	display:table-cell;
+	text-align:center; 
+	vertical-align: middle;
+}
+
+
+button {
+		background-color: #BDB76B;
+		border: none;
+		color: white;
+		height: 50px;
+		width: 130px;
+		border-radius: 40px;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+}
+
+table .sale_head {
+		font-size:14px;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 100%;
+}
+
+.sale_head td, .sale_head th {
+		border: 1px solid #ddd;
+		text-align: left;
+		
+		width:130px;
+}
+.vl {
+    border-left: 1px solid grey;
+    height:130%;
+}
+.sale_detail th {
+		border: 1px solid #ddd;
+		text-align: left;
+		
+		width:100%;
+}
+.sale_detail td {
+		
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.sale_detail_2 th {
+		border: 1px solid #ddd;
+		text-align: left;
+		
+		width:100%;
+}
+.sale_detail_2 td {
+		
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+/*.sale_head tr:nth-child(even){background-color: #f2f2f2}*/
+
+
+.sale_head th {
+		padding-top: 11px;
+		padding-bottom: 11px;
+		background-color: #4CAF50;
+		color: white;
+}
+.sale_detail th {
+		padding-top: 11px;
+		padding-bottom: 11px;
+		background-color: #4CAF50;
+		color: white;
+}	
+.sale_detail_2 th {
+		padding-top: 11px;
+		padding-bottom: 11px;
+		background-color: #4CAF50;
+		color: white;
+}	
+body { 
+	  background: url(./img/login1.jpg) no-repeat center center fixed; 
+	  background-color: white; 
+	  background-image: linear-gradient(200deg,lightblue,white ); 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
+.centre {
+		color:grey;
+		width: 28%;
+		height: 100%;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+.right {
+		top:40px;
+		width: 30%;
+		float: left;
+	}
+		
